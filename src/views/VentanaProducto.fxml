@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ventanaProductoController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuProducto" mnemonicParsing="false" text="Producto">
+            <items>
+              <MenuItem fx:id="menuVerProducto" mnemonicParsing="false" onAction="#menuVerProductos" text="ver Producto" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuVentas" mnemonicParsing="false" text="Ventas">
+            <items>
+              <MenuItem fx:id="menuVerVentas" mnemonicParsing="false" onAction="#menuRealizarVentas" text="ver Ventas" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuCliente" mnemonicParsing="false" text="Cliente">
+            <items>
+              <MenuItem fx:id="menuNuevoCliente" mnemonicParsing="false" onAction="#nuevoCliente" text="ver Cliente" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
